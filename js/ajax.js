@@ -28,7 +28,7 @@ function makeRequest(url, n) {
 
 
   try {
-        url = "file:leng/main/" + url;
+        url = "leng/main/" + url;
 	http_request = prepareRequest();		
 	http_request.onreadystatechange = function() { alertContents(http_request, n); }
 	http_request.open('GET', url, true);
